@@ -1,0 +1,140 @@
+/* ===== RESET ===== */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== GERAL ===== */
+div{
+  width: 100%;
+}
+
+/* ===== LINKS ===== */
+a{
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+a:hover{
+  color: #00b4ff;
+}
+
+/* ===== ICONES ===== */
+i{
+  font-size: 20px;
+  margin-right: 6px;
+}
+
+/* ===== NAV ===== */
+nav{
+  width: 100%;
+  height: 70px;
+  background: #0d1b2a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+/* ===== LAYOUT ===== */
+.left{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.right{
+  display: flex;
+  gap: 25px;
+}
+
+/* ===== LOGO ===== */
+.left img{
+  width: 55px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.left img:hover{
+  transform: scale(1.1) rotate(2deg);
+}
+
+/* ===== SEÇÃO 1 ===== */
+#s1{
+  height: 90vh;
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+              url("bg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+/* ===== SEÇÃO 2 ===== */
+#s2{
+  padding: 60px;
+  background: #f5f7fa;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ===== CARD ===== */
+.card{
+  width: 280px;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card:hover{
+  transform: translateY(-8px);
+}
+
+/* ===== IMG CARD ===== */
+.card img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* ===== TEXTO CARD ===== */
+.wrapTexts{
+  padding: 15px;
+  text-align: center;
+}
+
+.wrapTexts h3{
+  margin-bottom: 10px;
+  color: #0d1b2a;
+}
+
+.wrapTexts p{
+  font-size: 14px;
+  color: #555;
+}
+
+/* ===== SEÇÃO 3 ===== */
+#s3{
+  padding: 60px;
+  display: contents;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* ===== RESPONSIVO ===== */
+@media(max-width: 768px){
+  nav{
+    flex-direction: column}
+}
